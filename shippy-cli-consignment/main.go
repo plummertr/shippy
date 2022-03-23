@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/plummertr/shippy/shippy-service-consignment/proto/consignment"
+	pb "github.com/plummertr/shippy/shippy-service-consignment/proto/consignment"
 	"google.golang.org/grpc"
 )
 
@@ -16,8 +16,8 @@ const (
 	defaultFilename = "consignment.json"
 )
 
-func parseFile(file string) (*consignment.Consignment, error) {
-	var consignment *consignment.Consignment
+func parseFile(file string) (*pb.Consignment, error) {
+	var consignment *pb.Consignment
 
 	data, err := ioutil.ReadFile(file)
 	if err != nil {
@@ -35,7 +35,7 @@ func main() {
 	}
 	defer conn.Close()
 
-	client := consignment.NewShippingServiceClient(conn)
+	client := pb.NewShippingServiceClient(conn)
 	file := defaultFilename
 	if len(os.Args) > 1 {
 		file = os.Args[1]
@@ -53,7 +53,7 @@ func main() {
 
 	log.Printf("Create: %t", r.Created)
 
-	getAll, err := client.GetConsignments(context.Background(), &consignment.GetRequest)
+	getAll, err := client.GetConsignments(context.Background(), &pb.GetRequest{})
 	if err != nil {
 		log.Fatalf("could not list consignments: %v", err)
 	}

@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"log"
 	"net"
 	"sync"
@@ -62,6 +63,8 @@ func main() {
 	}
 
 	s := grpc.NewServer()
+
+	fmt.Println(pb.GetRequest{})
 
 	pb.RegisterShippingServiceServer(s, &service{repo})
 
