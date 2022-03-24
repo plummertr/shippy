@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3940d439-bce6-47c0-851c-e811b937afac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/shippy-cli-consignment/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/shippy-cli-consignment/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shippy-cli-consignment/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/shippy-cli-consignment/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shippy-cli-consignment/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/shippy-cli-consignment/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shippy-service-consignment/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/shippy-service-consignment/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shippy-service-consignment/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/shippy-service-consignment/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shippy-service-consignment/proto/consignment/consignment.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/shippy-service-consignment/proto/consignment/consignment.pb.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
